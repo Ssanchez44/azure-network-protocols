@@ -32,7 +32,6 @@ Step 2: Configure Network Security Groups (NSGs) to manage inbound and outbound 
 
 Step 3: Use Wireshark to capture and analyze traffic between VMs.
 
-Step 4: Test traffic flow, observe how NSGs impact the communication, and analyze network behavior.
 
 <h2>Actions and Observations</h2>
 
@@ -58,7 +57,7 @@ Network Security Group (NSG) rules can block or allow specific types of traffic 
 
 <p>
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/d9339366-c4bb-42da-a47e-5b455e6d64e7)
 
 
 </p>
@@ -68,11 +67,3 @@ Wireshark helps in monitoring and analyzing the actual traffic between VMs in re
 <br />
 
 <p>
-
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-
-</p>
-<p>
-By testing the traffic flow and observing how NSGs affect communication, we can verify that the NSG configurations are performing as expected
-</p>
-<br />
