@@ -26,33 +26,52 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+Step 1: Set up Azure Virtual Machines and establish network connectivity.
+
+Step 2: Configure Network Security Groups (NSGs) to manage inbound and outbound traffic.
+
+Step 3: Use Wireshark to capture and analyze traffic between VMs.
+
+Step 4: Test traffic flow, observe how NSGs impact the communication, and analyze network behavior.
 
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ In this step, we configure the network settings for our Azure Virtual Machines (VMs). We use Wireshark to capture the network traffic between the VMs to analyze the communication. As traffic flows between the Windows 10 and Ubuntu Server VMs, we can see various protocols in action, such as DNS, SSH, RDP, HTTP/S, and ICMP. This is a key part of monitoring network activity and understanding how different types of traffic interact within a virtualized environment.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Network Security Group (NSG) rules can block or allow specific types of traffic between the VMs. For example, if we apply a rule that blocks HTTP/S traffic on DC-1, Client-1 will no longer be able to access any web services on DC-1. In Wireshark, this will be indicated as "Destination Unreachable" messages for HTTP/S requests.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Wireshark helps in monitoring and analyzing the actual traffic between VMs in real-time.
+</p>
+<br />
+
+<p>
+
+  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+<p>
+By testing the traffic flow and observing how NSGs affect communication, we can verify that the NSG configurations are performing as expected
 </p>
 <br />
