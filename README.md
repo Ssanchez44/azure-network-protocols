@@ -38,7 +38,7 @@ Step 4: Test traffic flow, observe how NSGs impact the communication, and analyz
 
 <p>
 
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/e007d4ff-8d92-44c2-aa05-73e828aaf0c2)
 
 </p>
 <p>
@@ -48,17 +48,18 @@ Step 4: Test traffic flow, observe how NSGs impact the communication, and analyz
 
 <p>
 
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![image](https://github.com/user-attachments/assets/bb3cea8d-a826-4896-bbdc-38fdaa9b9ae5)
 
 </p>
 <p>
-Network Security Group (NSG) rules can block or allow specific types of traffic between the VMs. For example, if we apply a rule that blocks HTTP/S traffic on DC-1, Client-1 will no longer be able to access any web services on DC-1. In Wireshark, this will be indicated as "Destination Unreachable" messages for HTTP/S requests.
+Network Security Group (NSG) rules can block or allow specific types of traffic between the VMs. For example, if we apply a rule that blocks ICMP traffic on DC-1, Client-1 will no longer be able to access any web services on DC-1. In Wireshark, this will be indicated as "Destination Unreachable" messages for ICMP requests.
 </p>
 <br />
 
 <p>
 
-  <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Uploading image.png…]()
+
 
 </p>
 <p>
